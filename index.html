@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – McLloyd</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals home page for McLloyd, a facilities technician and software development student in Harare, Zimbabwe, sharing web development resources and a personal profile.">
+    <meta name="author" content="McLloyd">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <H1>WDD 131 - McLloyd</H1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mclloyd-pise/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26"
+                        target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>McLloyd Pise</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm McLloyd, a Facilities and Maintenance Technician based in Mutare, Zimbabwe,
+                    currently working with The Church of Jesus Christ of Latter-day Saints. Before this
+                    role, I spent over 20 years across IT support and web development, building sites
+                    with HTML, CSS, JavaScript, and WordPress. I'm now working toward a B.S. in Software
+                    Development through BYU&ndash;Pathway, with the goal of moving into a full-time
+                    developer role. Outside of work and coursework, I homeschool my children and enjoy
+                    hands-on projects, from wiring up home electrical systems to tinkering with code.
+                </p>
+                <img src="images/McLloyd.jfif" alt=" Profile photo of McLloyd" width="160" height="190">
+            </div>
+
+            <h3>Mutare, Zimbabwe</h3>
+            <div class="country-content">
+                <figure>
+                    <img src="images/zimbabwe-flag.svg" alt="Official flag of Zimbabwe" width="180" height="120">
+                    <figcaption>Official Flag of Zimbabwe</figcaption>
+                </figure>
+                <p>
+                    Zimbabwe is a landlocked country in Southern Africa, home to Victoria Falls, one of
+                    the largest waterfalls in the world. Mutare, known as Umtali until 1982, is the capital and largest city in the province of Manicaland. It is the
+                    third-largest city in Zimbabwe. Zimbabwe has
+                    a growing community of developers and IT professionals working to expand the local
+                    tech industry.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="resource-list">
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a>
+                </li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> McLloyd Pise &bull; Mutare, Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
