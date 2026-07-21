@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A photo album of temples of The Church of Jesus Christ of Latter-day Saints." />
+  <meta name="author" content="McLloyd Pise" />
+
+  <!-- Favicon: Zimbabwe flag -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='20' fill='%23fff'/%3E%3Crect width='30' height='2.86' y='0' fill='%23046A38'/%3E%3Crect width='30' height='2.86' y='2.86' fill='%23FFD200'/%3E%3Crect width='30' height='2.86' y='5.72' fill='%23D40000'/%3E%3Crect width='30' height='2.86' y='8.58' fill='%23000'/%3E%3Crect width='30' height='2.86' y='11.44' fill='%23D40000'/%3E%3Crect width='30' height='2.86' y='14.3' fill='%23FFD200'/%3E%3Crect width='30' height='2.86' y='17.14' fill='%23046A38'/%3E%3Cpath d='M0 0 L11 10 L0 20 Z' fill='%23000'/%3E%3Cpolygon points='4.5,7.7 5.4,10.4 3.1,8.7 5.9,8.7 3.6,10.4' fill='%23FFD200'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Mobile-first CSS order -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 700px)" />
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <p class="brand">Temple Album</p>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples of The Church of Jesus Christ of Latter-day Saints</h1>
+
+    <div class="temple-grid">
+      <figure class="temple-card">
+        <img src="/images/salt_lake_temple_renovation_rendering.jpeg" alt="Salt Lake Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Salt Lake Temple <span>&middot; 1893</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/harare_zimbabwe_temple_exterior_rendering.jpeg" alt="Harare Zimbabwe Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Harare Zimbabwe Temple <span>&middot; 2026</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/johannesburg_south_africa_temple_lds.jpeg" alt="Johannesburg South Africa Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Johannesburg South Africa Temple <span>&middot; 1985</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Aba Nigeria Temple <span>&middot; 2005</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/accra_ghana_temple_lds.jpeg" alt="Accra Ghana Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Accra Ghana Temple <span>&middot; 2004</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/nairobi_kenya_temple_exterior.jpeg" alt="Nairobi Kenya Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Nairobi Kenya Temple <span>&middot; 2025</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/kinshasa_temple.jpeg" alt="Kinshasa Democratic Republic of the Congo Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Kinshasa DR Congo Temple <span>&middot; 2019</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/temple_rendering_lagos_nigeria_temple.jpeg" alt="Lagos Nigeria Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Lagos Nigeria Temple <span>&middot; Construction</span></figcaption>
+      </figure>
+
+      <figure class="temple-card">
+        <img src="/images/durban_south_africa_temple_exterior.jpeg" alt="Durban South Africa Temple" loading="lazy" width="800" height="450" />
+        <figcaption>Durban South Africa Temple <span>&middot; 2020</span></figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> McLloyd Pise &middot; Mutare, Zimbabwe</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
