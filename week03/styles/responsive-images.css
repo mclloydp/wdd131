@@ -1,0 +1,64 @@
+/* ========================================
+   WDD 131 - Week 03 - Responsive Images
+   ======================================== */
+
+:root {
+  --color-mustard: #d4a017;
+  --color-gold: #f0c040;
+  --color-charcoal: #2b2b2b;
+  --color-offwhite: #f7f5f0;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-offwhite);
+  line-height: 1.5;
+}
+
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-charcoal);
+  font-size: 1.75rem;
+}
+
+/* ---- Hero / Picture Element ---- */
+
+.hero {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-charcoal);
+}
+
+/* Responsive: image scales to container width, height auto to preserve
+   the intrinsic 2:1 aspect ratio and avoid layout shift/distortion. */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  font-size: 0.875rem;
+  color: var(--color-charcoal);
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}

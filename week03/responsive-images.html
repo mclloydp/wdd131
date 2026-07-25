@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images | WDD 131</title>
+  <meta name="description" content="WDD 131 Week 03 activity demonstrating responsive images with the picture element and art direction.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22><rect width=%22900%22 height=%22600%22 fill=%22%23046A38%22/><rect width=%22900%22 height=%22400%22 y=%22100%22 fill=%22%23FFD200%22/><rect width=%22900%22 height=%22200%22 y=%22200%22 fill=%22%23D40000%22/><polygon points=%220,0 300,300 0,600%22 fill=%22%23000%22/><polygon points=%220,0 260,300 0,600%22 fill=%22%23FFFFFF%22/></svg>">
+  <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Images: Art Direction with &lt;picture&gt;</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+        <img
+          src="images/hero-small.webp"
+          alt="Exterior view of a temple of The Church of Jesus Christ of Latter-day Saints"
+          width="1500"
+          height="750"
+        >
+      </picture>
+    </div>
+
+    <p>
+      This page demonstrates the <code>&lt;picture&gt;</code> element used for art-directed,
+      responsive images. Resize the browser window to see the source image swap between
+      small, medium, and large crops at different breakpoints.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 McLloyd Pise. WDD 131 Week 03.</p>
+  </footer>
+</body>
+</html>
